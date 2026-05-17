@@ -14,7 +14,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hi Shubh Ratnagiri Bike Rental,%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Vehicle Needed:* ${formData.vehicle}%0A*Dates:* ${formData.startDate} to ${formData.endDate}%0A*Message:* ${formData.message}`;
+    const text = `Hi Shubh Ratnagiri Bike & Car Rental,%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Vehicle Needed:* ${formData.vehicle}%0A*Dates:* ${formData.startDate} to ${formData.endDate}%0A*Message:* ${formData.message}`;
     window.open(`https://wa.me/919881280296?text=${text}`, '_blank');
   };
 

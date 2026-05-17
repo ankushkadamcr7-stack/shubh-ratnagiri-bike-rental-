@@ -60,6 +60,23 @@ export default function Testimonials() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16 text-center"
+        >
+          <a
+            href="https://search.google.com/local/writereview?placeid=ChIJeSmIwqcN6jsRK1KYVyk7GGE"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 bg-white text-ocean-900 px-8 py-4 rounded-full font-bold hover:bg-sand-50 transition-transform hover:scale-105 shadow-xl"
+          >
+            <Star className="w-5 h-5 fill-sunset-500 text-sunset-500" />
+            Leave a Review on Google
+          </a>
+        </motion.div>
       </div>
     </section>
   );

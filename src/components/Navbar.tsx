@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Bike } from 'lucide-react';
+import { Menu, X, Bike, Car } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function Navbar() {
@@ -32,7 +32,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Bike className="w-8 h-8 text-sunset-500" />
+            <div className="flex items-center">
+              <Car className="w-8 h-8 text-sunset-500" />
+              <Bike className="w-6 h-6 text-sunset-500 -ml-2 mb-2 bg-white/20 rounded-full" />
+            </div>
             <a href="#home" className={`font-serif text-2xl font-bold tracking-tight transition-colors ${scrolled ? 'text-ocean-900' : 'text-white'}`}>
               Shubh<span className="text-sunset-500">Ratnagiri</span>
             </a>

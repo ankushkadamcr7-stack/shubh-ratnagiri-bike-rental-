@@ -9,7 +9,8 @@ export default function Services() {
       image: "https://cdn-s3.autocarindia.com/legacy/cdni/ExtraImages/20200428031817_Top-selling-scooters-in-India.jpg?w=728&q=75",
       desc: "Perfect for solo travellers and couples. Explore Ratnagiri's beaches, forts, and ghats at your own pace.",
       features: ['Daily/Weekly rates', 'Helmet included', 'Easy pickup & drop'],
-      link: 'https://wa.me/919881280296?text=Hi,%20I%20want%20to%20book%20a%20scooty.'
+      link: '#scooters-fleet',
+      btnText: 'View Scooties & Bikes'
     },
     {
       title: 'Car Rental',
@@ -17,7 +18,8 @@ export default function Services() {
       image: "https://jucars.in/wp-content/uploads/2025/08/CDRSD-960_Option_1_Mobile.webp",
       desc: "Comfortable self-drive or chauffeur car rental for families and groups exploring Ratnagiri.",
       features: ['AC Cars available', 'Family-friendly', 'Flexible duration'],
-      link: 'https://wa.me/919881280296?text=Hi,%20I%20want%20to%20book%20a%20car.'
+      link: '#cars-fleet',
+      btnText: 'View Cars & SUVs'
     }
   ];
 
@@ -46,13 +48,13 @@ export default function Services() {
               transition={{ delay: idx * 0.2 }}
               className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-64 sm:h-72 lg:h-80 overflow-hidden relative flex items-center justify-center bg-sand-50/50">
                 <img 
                   src={service.image} 
                   alt={service.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 p-4"
                 />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur pb-1 pt-2 px-3 rounded-2xl">
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur pb-1 pt-2 px-3 rounded-2xl shadow-sm z-10">
                   <service.icon className="w-8 h-8 text-ocean-900" />
                 </div>
               </div>
@@ -71,11 +73,9 @@ export default function Services() {
                 </ul>
                 <a 
                   href={service.link}
-                  target="_blank"
-                  rel="noreferrer"
                   className="block w-full text-center bg-ocean-900 hover:bg-ocean-800 text-white font-semibold py-4 rounded-xl transition-colors"
                 >
-                  Book on WhatsApp
+                  {service.btnText}
                 </a>
               </div>
             </motion.div>

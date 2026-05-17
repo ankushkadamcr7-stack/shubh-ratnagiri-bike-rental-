@@ -1,4 +1,4 @@
-import { Bike, Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { Bike, Car, Instagram, Facebook, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -8,7 +8,10 @@ export default function Footer() {
           
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <Bike className="w-8 h-8 text-sunset-500" />
+              <div className="flex items-center">
+                <Car className="w-8 h-8 text-sunset-500" />
+                <Bike className="w-6 h-6 text-sunset-500 -ml-2 mb-2 bg-white/10 rounded-full" />
+              </div>
               <span className="font-serif text-2xl font-bold tracking-tight text-white">
                 Shubh<span className="text-sunset-500">Ratnagiri</span>
               </span>
@@ -52,7 +55,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-ocean-800 mt-16 pt-8 text-center text-sm text-sand-50/50">
-          <p>© 2025 Shubh Ratnagiri Bike Rental. All rights reserved.</p>
+          <p>© 2025 Shubh Ratnagiri Bike & Car Rental. All rights reserved.</p>
         </div>
       </div>
     </footer>

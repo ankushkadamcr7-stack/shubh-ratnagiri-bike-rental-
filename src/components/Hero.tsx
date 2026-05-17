@@ -34,13 +34,13 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-14">
               <a
-                href="#fleet"
+                href="#scooters-fleet"
                 className="inline-flex justify-center items-center px-8 py-4 bg-sunset-500 hover:bg-sunset-600 text-white rounded-full font-semibold transition-all transform hover:-translate-y-1 shadow-lg shadow-sunset-500/30 text-lg"
               >
                 Book a Scooty
               </a>
               <a
-                href="#fleet"
+                href="#cars-fleet"
                 className="inline-flex justify-center items-center px-8 py-4 bg-transparent border-2 border-white hover:bg-white hover:text-ocean-900 text-white rounded-full font-semibold transition-all transform hover:-translate-y-1 text-lg"
               >
                 Book a Car
